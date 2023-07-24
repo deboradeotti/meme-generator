@@ -43,8 +43,8 @@ export default function Meme() {
       </form>
       <div className="meme">
         <img src={meme.randomImage} className="meme__image" alt="" />
-        <h2 className="meme__text top">{meme.topText}</h2>
-        <h2 className="meme__text bottom">{meme.bottomText}</h2>
+        {meme.randomImage && <h2 className="meme__text top">{meme.topText}</h2>}
+        {meme.randomImage && <h2 className="meme__text bottom">{meme.bottomText}</h2>}
       </div>
     </main>
   )
